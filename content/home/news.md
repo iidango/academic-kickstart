@@ -1,7 +1,7 @@
 +++
 # Recent and Upcoming Talks widget.
 widget = "custom"
-active = true
+active = false
 date = 2016-04-20T00:00:00
 
 title = "News"
@@ -12,5 +12,5 @@ weight = 30
 
 +++
 
-### 2018.07.08
+### 2018.7.14
 under construction...
