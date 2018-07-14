@@ -43,6 +43,48 @@ Prerequisites:
   
 4. Read the [Quick Start Guide](https://sourcethemes.com/academic/docs/) to learn how to add Markdown content, customize your site, and deploy it.
 
+### Edit
+
+1. run server
+
+```
+$ hugo server
+```
+
+contents is updated automatically
+
+### Deploy for GitHub Pages
+
+please run `deploy.sh`
+
+```
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+# Build the project.
+hugo -t academic # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+  fi
+  git commit -m "$msg"
+
+  # Push source and build repos.
+  git push origin master
+
+  # Come Back up to the Project Root
+  cd ..
+```
+
+
 ## License
 
 Copyright 2017 [George Cushen](https://georgecushen.com).
