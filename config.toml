@@ -62,7 +62,7 @@ enableGitInfo = false
   organizations = [ { name = "Department of Information and Communication Engineering, Nagoya University", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "photo.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "iida_at_ucl.nuee.nagoya-u.ac.jp"
   address = ""
   office_hours = ""
